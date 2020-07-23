@@ -1,0 +1,8 @@
+{
+	"softwarefolder": "C:\\bank_soa-1.8\\",
+	"websitefolder": "C:\\bank_soa-1.8\\digitalbankwebsite\\",
+	"databasename": "dbCustomer",
+	"databaseusername": "root",
+	"databasepassword": "root",
+	"databasetestquery": "SELECT CONCAT('[', GROUP_CONCAT(JSON_OBJECT('_id', _id)), ']') as jsonresult from tCustomer;"
+}

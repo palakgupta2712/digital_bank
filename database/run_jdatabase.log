@@ -1,0 +1,20 @@
+added manifest
+adding: jdatabase/dbsql.class(in = 3068) (out= 1719)(deflated 43%)
+adding: jdatabase/serviceCommon.class(in = 1754) (out= 1008)(deflated 42%)
+adding: json-simple-1.1.1.jar(in = 23931) (out= 21027)(deflated 12%)
+adding: mysql-connector-java-8.0.18.jar(in = 2330539) (out= 2201873)(deflated 5%)
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< org.apache.maven:standalone-pom >-------------------
+[INFO] Building Maven Stub Project (No POM) 1
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install-file (default-cli) @ standalone-pom ---
+[INFO] Installing C:\bank_soa-1.8\database\jdatabase.jar to C:\Users\Ramani\.m2\repository\mysql\jdatabase\1.0\jdatabase-1.0.jar
+[INFO] Installing C:\Users\Ramani\AppData\Local\Temp\mvninstall5067402476233421120.pom to C:\Users\Ramani\.m2\repository\mysql\jdatabase\1.0\jdatabase-1.0.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.600 s
+[INFO] Finished at: 2020-07-24T01:23:12+05:30
+[INFO] ------------------------------------------------------------------------
