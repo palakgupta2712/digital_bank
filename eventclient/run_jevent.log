@@ -1,0 +1,37 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------------< myevent:jevent >---------------------------
+[INFO] Building jeventClient 2.0-STABLE
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ jevent ---
+[INFO] Deleting C:\bank_soa-1.8\eventclient\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jevent ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\bank_soa-1.8\eventclient\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ jevent ---
+[INFO] Compiling 1 source file to C:\bank_soa-1.8\eventclient\target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.695 s
+[INFO] Finished at: 2020-07-24T01:23:24+05:30
+[INFO] ------------------------------------------------------------------------
+        1 file(s) copied.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------------< myevent:jevent >---------------------------
+[INFO] Building jeventClient 2.0-STABLE
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install-file (default-cli) @ jevent ---
+[INFO] Installing C:\bank_soa-1.8\eventclient\jevent.jar to C:\Users\Ramani\.m2\repository\myevent\jevent\1.0\jevent-1.0.jar
+[INFO] Installing C:\Users\Ramani\AppData\Local\Temp\mvninstall1279770492081526431.pom to C:\Users\Ramani\.m2\repository\myevent\jevent\1.0\jevent-1.0.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.648 s
+[INFO] Finished at: 2020-07-24T01:23:30+05:30
+[INFO] ------------------------------------------------------------------------
