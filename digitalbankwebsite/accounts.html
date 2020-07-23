@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Accounts</title>
+	<script src="./js/angular.min.js"></script>
+	<script src="./js/_mybankAPIgateway.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	 <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+</head>
+
+<body ng-app="_mybankAPIgateway" ng-controller="_mybankAPIgatewayController">
+	<!--nav bar starts here -->
+<nav>
+    <div class="nav-wrapper teal darker-3">
+      <a href= "mybank.html" class="brand-logo" style="margin-left: 15px;">Digital Bank</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+         <li><a href="http://localhost:8081/customer.html" style="font-size: 20px;">Customer</a></li>
+        <li><a href="http://localhost:8082/accounts.html" style="font-size: 20px;">Accounts</a></li>
+        <li><a href="http://localhost:8083/transactions.html" style="font-size: 20px;">Transactions</a></li>
+      </ul>
+    </div>
+ </nav>
+ 
+
+ <!-- nav bar ends here-->
+
+ <!-- Accounts -->
+ <h1 style="text-align: center; font-family: 'Quicksand', sans-serif;"> Accounts </h1>
+
+ <!-- inputs for form starts here -->
+
+ <div class="row" align="center">
+    <form class="col s12" id="frm" name="frm">
+      <div class="row">
+        
+        <div class="input-field col s4">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="accountid" class="validate" type="text" name="accountid" ng-model="form.account._id">
+          <label for="icon_prefix">Account ID </label>
+        </div>
+        
+        <div class="input-field col s4">
+          <i class="material-icons prefix">label</i>
+          <input id="accountname" type="text" name="accountname" ng-model="form.account.name"  class="validate">
+          <label for="icon_telephone">Name</label>
+        </div>
+      
+        <div class="input-field col s4">
+          <i class="material-icons prefix">account_balance_wallet</i>
+          <input id="accountbalance" type="text" name="accountbalance" ng-model="form.account.balance" class="validate">
+          <label for="icon_telephone">Balance</label>
+        </div>
+      
+
+      </div>
+      <br>
+
+      <!--Button Group -->
+    <div class="btn-group" role="submit" aria-label="Submit Buttons" align="center">
+
+    	<button name="btnselect" ng-click="data.account.selectquery();" class="waves-effect waves-light btn-large"><i class="material-icons left">toc</i>View Accounts</button>
+
+		<button class="waves-effect waves-light btn-large" name="btninsert" ng-click="data.account.insertquery();"><i class="material-icons left">add</i>New Account</button>
+	
+		<button class="waves-effect waves-light btn-large" name="btnupdate" ng-click="data.account.updatequery();"><i class="material-icons left">publish</i>Update Account</button>
+	
+
+		<button class="waves-effect waves-light btn-large"  name="btndelete" ng-click="data.account.deletequery();"><i class="material-icons left">clear</i>Delete Account</button>
+
+	</div>
+<br><br>
+    </form>
+</div>
+
+    <!-- card starts here -->
+    <div class="container" align="center"  ng-if="data.queryresponse.length > 0">
+    	<div class="row">
+    		<div class="col s12 m12">
+      			<div class="card teal darken-3">
+        			<div class="card-content white-text">
+          				<span class="card-title">List of Accounts</span>
+        			</div>
+       				<table class="striped centered teal darker-3 white-text">
+					<thead>
+						<tr>
+						<th scope="col" class="text-center">Account ID</th>
+						<th scope="col" class="text-center">Name</th>
+						<th scope="col" class="text-center">Balance</th>
+						</tr>
+					</thead>
+					<tbody>
+					<tr ng-repeat="account in data.queryresponse" style="color: white;">
+						<td scope="col" class="text-center">{{account._id}}</td>
+						<td class="text-center">{{account.accountname}}</td>
+						<td class="text-center">{{account.accountbalance}}</td>
+					</tr>
+					</tbody>
+					</table>
+		        </div>
+     		</div>
+  		</div>
+  	</div>
+  </body>
+  </html>
